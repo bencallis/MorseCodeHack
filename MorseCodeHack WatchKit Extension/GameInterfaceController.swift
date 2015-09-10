@@ -25,7 +25,7 @@ class GameInterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         reloadRound()
-        currentScoreLabel.setText(String(0))
+        score = 0
     }
 
     override func willActivate() {
@@ -63,8 +63,7 @@ class GameInterfaceController: WKInterfaceController {
             let isCorrect = row.titleText == currentRound.letter
             let colour = isCorrect ? UIColor.greenColor() : UIColor.redColor()
             row.group.setBackgroundColor(colour)
-            
-            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.80 * Double(NSEC_PER_SEC)))
+            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.25 * Double(NSEC_PER_SEC)))
             dispatch_after(delayTime, dispatch_get_main_queue(), { () -> Void in
                 if isCorrect {
                     self.handleCorrectAnswer()
