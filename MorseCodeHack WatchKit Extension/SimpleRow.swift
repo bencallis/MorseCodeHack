@@ -11,4 +11,5 @@ import WatchKit
 class SimpleRow: NSObject {
     @IBOutlet weak var titleLabel: WKInterfaceLabel!
     @IBOutlet weak var group : WKInterfaceGroup!
+    var titleText : String!
 }

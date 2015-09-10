@@ -12,11 +12,12 @@ import Foundation
 
 class GameInterfaceController: WKInterfaceController {
     
-    var score : Int = 0{
+    var score : Int = 0 {
         didSet {
             currentScoreLabel.setText(String(score))
         }
     }
+    var currentRound : Round!
 
     @IBOutlet var currentScoreLabel: WKInterfaceLabel!
     
@@ -24,7 +25,7 @@ class GameInterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         reloadRound()
-        // Configure interface objects here.
+        currentScoreLabel.setText(String(0))
     }
 
     override func willActivate() {
@@ -35,6 +36,7 @@ class GameInterfaceController: WKInterfaceController {
 
     func reloadRound() {
         let newRound = getNextRound()
+        currentRound = newRound
         
         let numberOfOptions = newRound.alternatives.count + 1
         choicesTable.setNumberOfRows(numberOfOptions, withRowType: "choiceRow")
@@ -49,34 +51,36 @@ class GameInterfaceController: WKInterfaceController {
         
         for index in 0..<4 {
             if let row = choicesTable.rowControllerAtIndex(index) as? SimpleRow {
-                row.titleLabel.setText(arrayOfChoices[index])
+                let text = arrayOfChoices[index]
+                row.titleLabel.setText(text)
+                row.titleText = text
             }
         }
     }
     
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
         if let row = table.rowControllerAtIndex(rowIndex) as? SimpleRow {
-            let isCorrect = true
-            let colour = isCorrect ? UIColor.redColor() : UIColor.greenColor()
+            let isCorrect = row.titleText == currentRound.letter
+            let colour = isCorrect ? UIColor.greenColor() : UIColor.redColor()
             row.group.setBackgroundColor(colour)
             
-            if isCorrect {
-                handleCorrectAnswer()
-            } else {
-                handleWrongAnswer()
-            }
-        
+            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.80 * Double(NSEC_PER_SEC)))
+            dispatch_after(delayTime, dispatch_get_main_queue(), { () -> Void in
+                if isCorrect {
+                    self.handleCorrectAnswer()
+                } else {
+                    self.handleWrongAnswer()
+                }
+            })
         }
     }
     
     func handleCorrectAnswer () {
         score++
-        // start new game
         reloadRound()
     }
     
     func handleWrongAnswer () {
-        // throw back to main menu
         self.popToRootController()
     }
 
