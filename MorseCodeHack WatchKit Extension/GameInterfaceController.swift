@@ -12,11 +12,12 @@ import Foundation
 
 class GameInterfaceController: WKInterfaceController {
     
-    var score : Int = 0{
+    var score : Int = 0 {
         didSet {
             currentScoreLabel.setText(String(score))
         }
     }
+    var currentRound : Round!
 
     @IBOutlet var currentScoreLabel: WKInterfaceLabel!
     
@@ -24,7 +25,7 @@ class GameInterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         reloadRound()
-        // Configure interface objects here.
+        score = 0
     }
 
     override func willActivate() {
@@ -35,8 +36,11 @@ class GameInterfaceController: WKInterfaceController {
 
     func reloadRound() {
         let newRound = getNextRound()
+        //<<<<<<< HEAD
         // MorseTapInterfaceController().foo()
-        MorseTapInterfaceController.processCode(newRound.morseCode)
+        //=======
+        currentRound = newRound
+        //>>>>>>> aa0e23029e819005c1e866704d983ee518952b0b
         
         let numberOfOptions = newRound.alternatives.count + 1
         choicesTable.setNumberOfRows(numberOfOptions, withRowType: "choiceRow")
@@ -51,34 +55,42 @@ class GameInterfaceController: WKInterfaceController {
         
         for index in 0..<4 {
             if let row = choicesTable.rowControllerAtIndex(index) as? SimpleRow {
-                row.titleLabel.setText(arrayOfChoices[index])
+                let text = arrayOfChoices[index]
+                row.titleLabel.setText(text)
+                row.titleText = text
             }
         }
+
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { () -> Void in
+          MorseTapInterfaceController.processCode(newRound.morseCode)
+        }
+
+//        dispatch_async(dispatch_get_main_queue(), MorseTapInterfaceController.processCode(newRound.morseCode))
+
     }
-    
+
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
         if let row = table.rowControllerAtIndex(rowIndex) as? SimpleRow {
-            let isCorrect = true
-            let colour = isCorrect ? UIColor.redColor() : UIColor.greenColor()
+            let isCorrect = row.titleText == currentRound.letter
+            let colour = isCorrect ? UIColor.greenColor() : UIColor.redColor()
             row.group.setBackgroundColor(colour)
-            
-            if isCorrect {
-                handleCorrectAnswer()
-            } else {
-                handleWrongAnswer()
-            }
-        
+            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.25 * Double(NSEC_PER_SEC)))
+            dispatch_after(delayTime, dispatch_get_main_queue(), { () -> Void in
+                if isCorrect {
+                    self.handleCorrectAnswer()
+                } else {
+                    self.handleWrongAnswer()
+                }
+            })
         }
     }
     
     func handleCorrectAnswer () {
         score++
-        // start new game
         reloadRound()
     }
     
     func handleWrongAnswer () {
-        // throw back to main menu
         self.popToRootController()
     }
 

@@ -67,6 +67,8 @@ public class MorseTapInterfaceController {
     public static func processCode(code : [MorseCharacter]){
         if !code.isEmpty {
             for char in code {
+                NSThread.sleepForTimeInterval(0.7)
+
                 switch (char) {
                 case .Dot:
                     dot()
@@ -75,8 +77,7 @@ public class MorseTapInterfaceController {
                 case .Space:
                     print("space")
                 }
-                NSThread.sleepForTimeInterval(0.7)
-                
+
             }
         }
     }

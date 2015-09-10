@@ -10,7 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="HomeInterfaceController" customModule="MorseCodeHack_WatchKit_Extension">
                     <items>
-                        <label alignment="center" text="Top Score: x" textAlignment="center" id="4kA-uD-94C"/>
+                        <label alignment="center" hidden="YES" text="Top Score: x" textAlignment="center" id="4kA-uD-94C"/>
                         <button width="1" alignment="left" title="New Game" id="0As-vC-CXJ">
                             <connections>
                                 <segue destination="waT-cg-HJ0" kind="push" id="ZUa-fw-yrU"/>
@@ -41,6 +41,8 @@
                     <items>
                         <label alignment="center" text="iOSDevUK 2015 Hack" textAlignment="center" numberOfLines="0" id="Tz9-b0-uVS"/>
                         <label alignment="left" text="Created By:" id="hFw-0I-9bh"/>
+                        <label alignment="left" text="Ben Callis" id="QaO-7p-bQU"/>
+                        <label alignment="left" text="Gwendolyn Weston" id="Tn3-3G-w0r"/>
                     </items>
                 </controller>
             </objects>
