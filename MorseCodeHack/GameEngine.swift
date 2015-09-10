@@ -60,7 +60,7 @@ struct Round {
 }
 
 func getNextRound() -> Round {
-  var indices = (0...alphaNumToMorse.count).map { $0 }
+  var indices = (0...alphaNumToMorse.count - 1).map { $0 }
   let keys: [String] = [String](alphaNumToMorse.keys)
 
   var letters: [String] = []
@@ -68,7 +68,7 @@ func getNextRound() -> Round {
     let random = arc4random_uniform(UInt32(indices.count))
     let letter = keys[indices[Int(random)]]
     letters.append(letter)
-    indices.removeAtIndex(indices[Int(random)])
+    indices.removeAtIndex(Int(random))
   }
 
   let designatedLetter = letters[0]
