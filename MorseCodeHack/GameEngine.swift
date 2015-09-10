@@ -76,3 +76,7 @@ func getNextRound() -> Round {
   return thisRound
 }
 
+func getCode(letter: String) -> [MorseCharacter]?{
+  return alphaNumToMorse[letter]
+}
+
