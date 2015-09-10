@@ -33,16 +33,6 @@ class LearnInterfaceController: WKInterfaceController {
         }
     }
 
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
         let sortedKeysAndValues = alphaNumToMorse.sort { $0.0 < $1.0 }
         let (_, code) = sortedKeysAndValues[rowIndex]

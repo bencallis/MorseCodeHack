@@ -17,23 +17,20 @@ class GameInterfaceController: WKInterfaceController {
             currentScoreLabel.setText(String(score))
         }
     }
+    
     var currentRound : Round!
 
     @IBOutlet var currentScoreLabel: WKInterfaceLabel!
     @IBOutlet var currentScoreTitleLabel: WKInterfaceLabel!
     
     @IBOutlet var choicesTable: WKInterfaceTable!
+    
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         reloadRound()
         score = 0
     }
-
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-
 
     func reloadRound() {
         let newRound = getNextRound()
@@ -58,7 +55,7 @@ class GameInterfaceController: WKInterfaceController {
             }
         }
 
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { () -> Void in
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
           MorseTapInterfaceController.processCode(newRound.morseCode)
         }
     }
@@ -69,7 +66,7 @@ class GameInterfaceController: WKInterfaceController {
             let colour = isCorrect ? UIColor.greenColor() : UIColor.redColor()
             row.group.setBackgroundColor(colour)
             let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.25 * Double(NSEC_PER_SEC)))
-            dispatch_after(delayTime, dispatch_get_main_queue(), { () -> Void in
+            dispatch_after(delayTime, dispatch_get_main_queue(), {
                 if isCorrect {
                     self.handleCorrectAnswer()
                 } else {
@@ -95,7 +92,7 @@ class GameInterfaceController: WKInterfaceController {
             }
         }
         let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC)))
-        dispatch_after(delayTime, dispatch_get_main_queue(), { () -> Void in
+        dispatch_after(delayTime, dispatch_get_main_queue(), {
             self.popToRootController()
         })
     }
