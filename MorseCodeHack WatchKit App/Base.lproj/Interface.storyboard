@@ -41,16 +41,16 @@
                     <items>
                         <label alignment="center" text="iOSDevUK 2015 Hack" textAlignment="center" numberOfLines="0" id="Tz9-b0-uVS"/>
                         <label alignment="left" text="Created By:" id="hFw-0I-9bh"/>
-                        <label alignment="left" text="Ben Callis" id="QaO-7p-bQU">
+                        <label alignment="left" text="Ben Callis" numberOfLines="0" id="QaO-7p-bQU">
                             <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                         </label>
-                        <label alignment="left" text="Gwendolyn Weston" id="Tn3-3G-w0r">
+                        <label alignment="left" text="Gwendolyn Weston" numberOfLines="0" id="Tn3-3G-w0r">
                             <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                         </label>
-                        <label alignment="left" text="Paul Beattie" id="QNC-Ja-rUr">
+                        <label alignment="left" text="Paul Beattie" numberOfLines="0" id="QNC-Ja-rUr">
                             <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                         </label>
-                        <label alignment="left" text="Benny Weingarten-Gabbay" id="afF-W8-iKC">
+                        <label alignment="left" text="Benny Weingarten-Gabbay" numberOfLines="0" id="afF-W8-iKC">
                             <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                         </label>
                     </items>
