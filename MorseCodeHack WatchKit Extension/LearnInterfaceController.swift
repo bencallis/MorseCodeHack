@@ -24,7 +24,7 @@ class LearnInterfaceController: WKInterfaceController {
         var counter = 0
         for (character, code) in sortedKeysAndValues {
             if let row = learnTable.rowControllerAtIndex(counter) as? LearnRow {
-                let stringRep = code.reduce("") { (codes, code) in codes + code.rawValue }
+                let stringRep = code.reduce("") { (currentString, code) in currentString + code.rawValue }
                 row.titleLabel.setText(character)
                 row.morseCodeLabel.setText(stringRep)
                 
