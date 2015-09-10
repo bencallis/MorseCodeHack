@@ -68,12 +68,12 @@
             </objects>
             <point key="canvasLocation" x="504" y="562"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Game Interface Controller-->
         <scene sceneID="oSm-gX-lRQ">
             <objects>
-                <controller hidesWhenLoading="NO" id="waT-cg-HJ0">
+                <controller hidesWhenLoading="NO" id="waT-cg-HJ0" customClass="GameInterfaceController" customModule="MorseCodeHack_WatchKit_Extension">
                     <items>
-                        <group alignment="center" id="WqZ-4J-sWV">
+                        <group width="60" alignment="center" id="WqZ-4J-sWV">
                             <items>
                                 <label alignment="left" verticalAlignment="center" text="Score:" id="Tpj-Ch-Of8">
                                     <color key="textColor" red="0.8291114267676768" green="0.8291114267676768" blue="0.8291114267676768" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,11 +88,19 @@
                         <table alignment="left" id="bbQ-uU-2wg">
                             <items>
                                 <tableRow id="CY7-HD-VT9">
-                                    <group key="rootItem" width="1" alignment="left" id="4IQ-qx-HfV"/>
+                                    <group key="rootItem" width="1" alignment="left" id="4IQ-qx-HfV">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Choice 1" id="py0-yO-Mm1"/>
+                                        </items>
+                                    </group>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="choicesTable" destination="bbQ-uU-2wg" id="wUA-fn-xIh"/>
+                        <outlet property="currentScoreLabel" destination="1KL-9y-q8F" id="64X-rG-JSg"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="504" y="230"/>
