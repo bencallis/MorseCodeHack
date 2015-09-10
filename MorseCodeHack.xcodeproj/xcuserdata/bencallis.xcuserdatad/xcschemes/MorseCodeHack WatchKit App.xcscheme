@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "327F5A381BA1E70E0069B11B"
+               BlueprintIdentifier = "32A2782B1BA1EB9300A04934"
                BuildableName = "MorseCodeHack WatchKit App.app"
                BlueprintName = "MorseCodeHack WatchKit App"
                ReferencedContainer = "container:MorseCodeHack.xcodeproj">
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "327F5A471BA1E70E0069B11B"
-               BuildableName = "MorseCodeHack WatchKit Extension.appex"
-               BlueprintName = "MorseCodeHack WatchKit Extension"
+               BlueprintIdentifier = "32A278031BA1EB9200A04934"
+               BuildableName = "MorseCodeHack.app"
+               BlueprintName = "MorseCodeHack"
                ReferencedContainer = "container:MorseCodeHack.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,9 +42,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "327F5A0B1BA1E70E0069B11B"
-               BuildableName = "MorseCodeHack.app"
-               BlueprintName = "MorseCodeHack"
+               BlueprintIdentifier = "32A2783A1BA1EB9300A04934"
+               BuildableName = "MorseCodeHack WatchKit Extension.appex"
+               BlueprintName = "MorseCodeHack WatchKit Extension"
                ReferencedContainer = "container:MorseCodeHack.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -60,7 +60,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "327F5A381BA1E70E0069B11B"
+            BlueprintIdentifier = "32A2782B1BA1EB9300A04934"
             BuildableName = "MorseCodeHack WatchKit App.app"
             BlueprintName = "MorseCodeHack WatchKit App"
             ReferencedContainer = "container:MorseCodeHack.xcodeproj">
@@ -85,7 +85,7 @@
          RemotePath = "/MorseCodeHack WatchKit App">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "327F5A381BA1E70E0069B11B"
+            BlueprintIdentifier = "32A2782B1BA1EB9300A04934"
             BuildableName = "MorseCodeHack WatchKit App.app"
             BlueprintName = "MorseCodeHack WatchKit App"
             ReferencedContainer = "container:MorseCodeHack.xcodeproj">
@@ -94,7 +94,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "327F5A381BA1E70E0069B11B"
+            BlueprintIdentifier = "32A2782B1BA1EB9300A04934"
             BuildableName = "MorseCodeHack WatchKit App.app"
             BlueprintName = "MorseCodeHack WatchKit App"
             ReferencedContainer = "container:MorseCodeHack.xcodeproj">
@@ -115,7 +115,7 @@
          RemotePath = "/MorseCodeHack WatchKit App">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "327F5A381BA1E70E0069B11B"
+            BlueprintIdentifier = "32A2782B1BA1EB9300A04934"
             BuildableName = "MorseCodeHack WatchKit App.app"
             BlueprintName = "MorseCodeHack WatchKit App"
             ReferencedContainer = "container:MorseCodeHack.xcodeproj">
@@ -124,7 +124,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "327F5A381BA1E70E0069B11B"
+            BlueprintIdentifier = "32A2782B1BA1EB9300A04934"
             BuildableName = "MorseCodeHack WatchKit App.app"
             BlueprintName = "MorseCodeHack WatchKit App"
             ReferencedContainer = "container:MorseCodeHack.xcodeproj">

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "327F5A0B1BA1E70E0069B11B"
+               BlueprintIdentifier = "32A278031BA1EB9200A04934"
                BuildableName = "MorseCodeHack.app"
                BlueprintName = "MorseCodeHack"
                ReferencedContainer = "container:MorseCodeHack.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "327F5A241BA1E70E0069B11B"
+               BlueprintIdentifier = "32A278171BA1EB9300A04934"
                BuildableName = "MorseCodeHackTests.xctest"
                BlueprintName = "MorseCodeHackTests"
                ReferencedContainer = "container:MorseCodeHack.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "327F5A2F1BA1E70E0069B11B"
+               BlueprintIdentifier = "32A278221BA1EB9300A04934"
                BuildableName = "MorseCodeHackUITests.xctest"
                BlueprintName = "MorseCodeHackUITests"
                ReferencedContainer = "container:MorseCodeHack.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "327F5A0B1BA1E70E0069B11B"
+            BlueprintIdentifier = "32A278031BA1EB9200A04934"
             BuildableName = "MorseCodeHack.app"
             BlueprintName = "MorseCodeHack"
             ReferencedContainer = "container:MorseCodeHack.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "327F5A0B1BA1E70E0069B11B"
+            BlueprintIdentifier = "32A278031BA1EB9200A04934"
             BuildableName = "MorseCodeHack.app"
             BlueprintName = "MorseCodeHack"
             ReferencedContainer = "container:MorseCodeHack.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "327F5A0B1BA1E70E0069B11B"
+            BlueprintIdentifier = "32A278031BA1EB9200A04934"
             BuildableName = "MorseCodeHack.app"
             BlueprintName = "MorseCodeHack"
             ReferencedContainer = "container:MorseCodeHack.xcodeproj">
