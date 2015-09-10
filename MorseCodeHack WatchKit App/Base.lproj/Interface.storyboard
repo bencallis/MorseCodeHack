@@ -95,18 +95,6 @@
             <objects>
                 <controller hidesWhenLoading="NO" id="waT-cg-HJ0" customClass="GameInterfaceController" customModule="MorseCodeHack_WatchKit_Extension">
                     <items>
-                        <group width="60" alignment="center" id="WqZ-4J-sWV">
-                            <items>
-                                <label alignment="left" verticalAlignment="center" text="Score:" minimumScaleFactor="0.5" id="Tpj-Ch-Of8">
-                                    <color key="textColor" red="0.8291114267676768" green="0.8291114267676768" blue="0.8291114267676768" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
-                                </label>
-                                <label alignment="left" verticalAlignment="center" text="0" id="1KL-9y-q8F">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
-                                </label>
-                            </items>
-                        </group>
                         <table alignment="left" id="bbQ-uU-2wg">
                             <items>
                                 <tableRow identifier="choiceRow" id="CY7-HD-VT9" customClass="SimpleRow" customModule="MorseCodeHack_WatchKit_Extension">
@@ -128,8 +116,6 @@
                     </items>
                     <connections>
                         <outlet property="choicesTable" destination="bbQ-uU-2wg" id="wUA-fn-xIh"/>
-                        <outlet property="currentScoreLabel" destination="1KL-9y-q8F" id="64X-rG-JSg"/>
-                        <outlet property="currentScoreTitleLabel" destination="Tpj-Ch-Of8" id="n3v-0c-b9y"/>
                     </connections>
                 </controller>
             </objects>

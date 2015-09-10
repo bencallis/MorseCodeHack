@@ -14,15 +14,16 @@ class GameInterfaceController: WKInterfaceController {
     
     var score : Int = 0 {
         didSet {
-            currentScoreLabel.setText(String(score))
+            self.setTitle("Score \(score)")
+            //currentScoreLabel.setText(String(score))
         }
     }
     
     var currentRound : Round!
 
-    @IBOutlet var currentScoreLabel: WKInterfaceLabel!
-    @IBOutlet var currentScoreTitleLabel: WKInterfaceLabel!
-    
+//    @IBOutlet var currentScoreLabel: WKInterfaceLabel!
+//    @IBOutlet var currentScoreTitleLabel: WKInterfaceLabel!
+
     @IBOutlet var choicesTable: WKInterfaceTable!
     
     
@@ -82,8 +83,8 @@ class GameInterfaceController: WKInterfaceController {
     }
     
     func handleWrongAnswer () {
-        currentScoreLabel.setHidden(true)
-        currentScoreTitleLabel.setText("Game Over")
+//        currentScoreLabel.setHidden(true)
+//        currentScoreTitleLabel.setText("Game Over")
         for index in 0..<4 {
             if let row = choicesTable.rowControllerAtIndex(index) as? SimpleRow {
                 let isCorrect = row.titleText == currentRound.letter
