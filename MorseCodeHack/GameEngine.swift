@@ -66,9 +66,9 @@ func getNextRound() -> Round {
   var letters: [String] = []
   for _ in 0...3 {
     let random = arc4random_uniform(UInt32(indices.count))
-    let letter = keys[Int(random)]
+    let letter = keys[indices[Int(random)]]
     letters.append(letter)
-    indices.removeAtIndex(Int(random))
+    indices.removeAtIndex(indices[Int(random)])
   }
 
   let designatedLetter = letters[0]
