@@ -35,6 +35,8 @@ class GameInterfaceController: WKInterfaceController {
 
     func reloadRound() {
         let newRound = getNextRound()
+        // MorseTapInterfaceController().foo()
+        MorseTapInterfaceController.processCode(newRound.morseCode)
         
         let numberOfOptions = newRound.alternatives.count + 1
         choicesTable.setNumberOfRows(numberOfOptions, withRowType: "choiceRow")

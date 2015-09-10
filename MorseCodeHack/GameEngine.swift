@@ -47,10 +47,10 @@ let alphaNumToMorse = [
   "0": [MorseCharacter.Dash,MorseCharacter.Dash,MorseCharacter.Dash,MorseCharacter.Dash,MorseCharacter.Dash],
 ]
 
-enum MorseCharacter {
-  case Dot
-  case Dash
-  case Space
+public enum MorseCharacter : String {
+  case Dot = "."
+  case Dash = "-"
+  case Space = " "
 }
 
 struct Round {
