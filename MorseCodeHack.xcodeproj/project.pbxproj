@@ -19,9 +19,9 @@
 		32A278331BA1EB9300A04934 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A278311BA1EB9300A04934 /* Interface.storyboard */; };
 		32A278351BA1EB9300A04934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A278341BA1EB9300A04934 /* Assets.xcassets */; };
 		32A2783C1BA1EB9300A04934 /* MorseCodeHack WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 32A2783B1BA1EB9300A04934 /* MorseCodeHack WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		32A278411BA1EB9300A04934 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A278401BA1EB9300A04934 /* InterfaceController.swift */; };
 		32A278431BA1EB9300A04934 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A278421BA1EB9300A04934 /* ExtensionDelegate.swift */; };
 		32A278451BA1EB9300A04934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A278441BA1EB9300A04934 /* Assets.xcassets */; };
+		32A2785F1BA1F3BD00A04934 /* HomeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2785D1BA1F17B00A04934 /* HomeInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,10 +100,10 @@
 		32A278341BA1EB9300A04934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32A278361BA1EB9300A04934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32A2783B1BA1EB9300A04934 /* MorseCodeHack WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MorseCodeHack WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		32A278401BA1EB9300A04934 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		32A278421BA1EB9300A04934 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		32A278441BA1EB9300A04934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32A278461BA1EB9300A04934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32A2785D1BA1F17B00A04934 /* HomeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeInterfaceController.swift; path = "../MorseCodeHack WatchKit App/HomeInterfaceController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +197,8 @@
 		32A278301BA1EB9300A04934 /* MorseCodeHack WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				32A2785B1BA1F09F00A04934 /* MorseCode */,
+				32A2785A1BA1F09700A04934 /* GameEngine */,
 				32A278311BA1EB9300A04934 /* Interface.storyboard */,
 				32A278341BA1EB9300A04934 /* Assets.xcassets */,
 				32A278361BA1EB9300A04934 /* Info.plist */,
@@ -207,12 +209,26 @@
 		32A2783F1BA1EB9300A04934 /* MorseCodeHack WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				32A278401BA1EB9300A04934 /* InterfaceController.swift */,
 				32A278421BA1EB9300A04934 /* ExtensionDelegate.swift */,
+				32A2785D1BA1F17B00A04934 /* HomeInterfaceController.swift */,
 				32A278441BA1EB9300A04934 /* Assets.xcassets */,
 				32A278461BA1EB9300A04934 /* Info.plist */,
 			);
 			path = "MorseCodeHack WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		32A2785A1BA1F09700A04934 /* GameEngine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = GameEngine;
+			sourceTree = "<group>";
+		};
+		32A2785B1BA1F09F00A04934 /* MorseCode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MorseCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +329,7 @@
 		32A277FC1BA1EB9200A04934 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = iOSDevUK;
 				TargetAttributes = {
@@ -433,7 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32A278431BA1EB9300A04934 /* ExtensionDelegate.swift in Sources */,
-				32A278411BA1EB9300A04934 /* InterfaceController.swift in Sources */,
+				32A2785F1BA1F3BD00A04934 /* HomeInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,13 +622,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = MorseCodeHack_WatchKit_Extension;
 				INFOPLIST_FILE = "MorseCodeHack WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MCH.MorseCodeHack.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -621,9 +641,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = MorseCodeHack_WatchKit_Extension;
 				INFOPLIST_FILE = "MorseCodeHack WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MCH.MorseCodeHack.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;

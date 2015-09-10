@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Home Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MorseCodeHack_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="HomeInterfaceController" customModule="MorseCodeHack_WatchKit_Extension">
                     <items>
                         <label alignment="center" text="Top Score: x" textAlignment="center" id="4kA-uD-94C"/>
                         <button width="1" alignment="left" title="New Game" id="0As-vC-CXJ">
@@ -27,6 +27,10 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="newGameButton" destination="0As-vC-CXJ" id="Xel-f9-MaI"/>
+                        <outlet property="topScoreLabel" destination="4kA-uD-94C" id="yke-uJ-HUt"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="166" y="318"/>
