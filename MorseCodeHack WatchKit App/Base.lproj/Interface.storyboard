@@ -1,15 +1,97 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MorseCodeHack_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Top Score: x" textAlignment="center" id="4kA-uD-94C"/>
+                        <button width="1" alignment="left" title="New Game" id="0As-vC-CXJ">
+                            <connections>
+                                <segue destination="waT-cg-HJ0" kind="push" id="ZUa-fw-yrU"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Learn" id="ZZ7-c6-qJp">
+                            <connections>
+                                <segue destination="s57-2V-JaV" kind="push" id="GBX-i7-TTy"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="About" id="lcV-UW-I8q">
+                            <connections>
+                                <segue destination="fVa-iG-vhx" kind="push" id="GOv-Yr-pfx"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="166" y="318"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="BhS-Ie-Ojt">
+            <objects>
+                <controller hidesWhenLoading="NO" id="fVa-iG-vhx">
+                    <items>
+                        <label alignment="center" text="iOSDevUK 2015 Hack" textAlignment="center" numberOfLines="0" id="Tz9-b0-uVS"/>
+                        <label alignment="left" text="Created By:" id="hFw-0I-9bh"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="195" y="670"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="gpq-CH-080">
+            <objects>
+                <controller hidesWhenLoading="NO" id="s57-2V-JaV">
+                    <items>
+                        <table alignment="left" id="Zh3-CV-bs5">
+                            <items>
+                                <tableRow id="cWO-6o-bKi">
+                                    <group key="rootItem" width="1" alignment="left" id="FD0-u5-wca">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="A" id="Kuu-Cq-Ja7"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="504" y="562"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="oSm-gX-lRQ">
+            <objects>
+                <controller hidesWhenLoading="NO" id="waT-cg-HJ0">
+                    <items>
+                        <group alignment="center" id="WqZ-4J-sWV">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="Score:" id="Tpj-Ch-Of8">
+                                    <color key="textColor" red="0.8291114267676768" green="0.8291114267676768" blue="0.8291114267676768" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="left" verticalAlignment="center" text="5" id="1KL-9y-q8F">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                        <table alignment="left" id="bbQ-uU-2wg">
+                            <items>
+                                <tableRow id="CY7-HD-VT9">
+                                    <group key="rootItem" width="1" alignment="left" id="4IQ-qx-HfV"/>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="504" y="230"/>
         </scene>
     </scenes>
 </document>
