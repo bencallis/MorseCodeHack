@@ -28,7 +28,6 @@
                         </button>
                     </items>
                     <connections>
-                        <outlet property="newGameButton" destination="0As-vC-CXJ" id="Xel-f9-MaI"/>
                         <outlet property="topScoreLabel" destination="4kA-uD-94C" id="yke-uJ-HUt"/>
                     </connections>
                 </controller>
@@ -87,12 +86,19 @@
                         </group>
                         <table alignment="left" id="bbQ-uU-2wg">
                             <items>
-                                <tableRow id="CY7-HD-VT9">
+                                <tableRow identifier="choiceRow" id="CY7-HD-VT9" customClass="SimpleRow" customModule="MorseCodeHack_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="4IQ-qx-HfV">
                                         <items>
-                                            <label alignment="left" verticalAlignment="center" text="Choice 1" id="py0-yO-Mm1"/>
+                                            <label alignment="center" verticalAlignment="center" text="Choice 1" id="py0-yO-Mm1">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
                                         </items>
+                                        <color key="backgroundColor" red="0.63137254901960782" green="0.3411764705882353" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                                     </group>
+                                    <connections>
+                                        <outlet property="group" destination="4IQ-qx-HfV" id="zTW-cs-fvY"/>
+                                        <outlet property="titleLabel" destination="py0-yO-Mm1" id="rfw-NG-dQO"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
