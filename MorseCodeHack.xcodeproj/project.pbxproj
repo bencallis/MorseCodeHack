@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		247427871BA1F6D20058BBA9 /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247427861BA1F6D20058BBA9 /* GameEngine.swift */; settings = {ASSET_TAGS = (); }; };
 		32A278081BA1EB9200A04934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A278071BA1EB9200A04934 /* AppDelegate.swift */; };
 		32A2780A1BA1EB9200A04934 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A278091BA1EB9200A04934 /* ViewController.swift */; };
 		32A2780D1BA1EB9200A04934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A2780B1BA1EB9200A04934 /* Main.storyboard */; };
@@ -80,6 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		247427861BA1F6D20058BBA9 /* GameEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
 		32A278041BA1EB9200A04934 /* MorseCodeHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseCodeHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A278071BA1EB9200A04934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32A278091BA1EB9200A04934 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				32A278091BA1EB9200A04934 /* ViewController.swift */,
 				32A2780B1BA1EB9200A04934 /* Main.storyboard */,
 				32A2780E1BA1EB9200A04934 /* Assets.xcassets */,
+				247427861BA1F6D20058BBA9 /* GameEngine.swift */,
 				32A278101BA1EB9200A04934 /* LaunchScreen.storyboard */,
 				32A278131BA1EB9200A04934 /* Info.plist */,
 			);
@@ -404,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32A2780A1BA1EB9200A04934 /* ViewController.swift in Sources */,
+				247427871BA1F6D20058BBA9 /* GameEngine.swift in Sources */,
 				32A278081BA1EB9200A04934 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -718,6 +722,7 @@
 				32A2784B1BA1EB9300A04934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32A2784D1BA1EB9300A04934 /* Build configuration list for PBXNativeTarget "MorseCodeHack WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -726,6 +731,7 @@
 				32A2784F1BA1EB9300A04934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32A278511BA1EB9300A04934 /* Build configuration list for PBXNativeTarget "MorseCodeHack" */ = {
 			isa = XCConfigurationList;
@@ -734,6 +740,7 @@
 				32A278531BA1EB9300A04934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32A278541BA1EB9300A04934 /* Build configuration list for PBXNativeTarget "MorseCodeHackTests" */ = {
 			isa = XCConfigurationList;
@@ -742,6 +749,7 @@
 				32A278561BA1EB9300A04934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32A278571BA1EB9300A04934 /* Build configuration list for PBXNativeTarget "MorseCodeHackUITests" */ = {
 			isa = XCConfigurationList;
@@ -750,6 +758,7 @@
 				32A278591BA1EB9300A04934 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
