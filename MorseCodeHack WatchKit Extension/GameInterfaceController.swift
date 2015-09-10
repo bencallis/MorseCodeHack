@@ -20,6 +20,7 @@ class GameInterfaceController: WKInterfaceController {
     var currentRound : Round!
 
     @IBOutlet var currentScoreLabel: WKInterfaceLabel!
+    @IBOutlet var currentScoreTitleLabel: WKInterfaceLabel!
     
     @IBOutlet var choicesTable: WKInterfaceTable!
     override func awakeWithContext(context: AnyObject?) {
@@ -80,7 +81,18 @@ class GameInterfaceController: WKInterfaceController {
     }
     
     func handleWrongAnswer () {
-        self.popToRootController()
+        currentScoreLabel.setHidden(true)
+        currentScoreTitleLabel.setText("Game Over")
+        for index in 0..<4 {
+            if let row = choicesTable.rowControllerAtIndex(index) as? SimpleRow {
+                let isCorrect = row.titleText == currentRound.letter
+                let colour = isCorrect ? UIColor.greenColor() : UIColor.redColor()
+                row.group.setBackgroundColor(colour)
+            }
+        }
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC)))
+        dispatch_after(delayTime, dispatch_get_main_queue(), { () -> Void in
+            self.popToRootController()
+        })
     }
-
 }

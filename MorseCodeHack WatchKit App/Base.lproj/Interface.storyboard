@@ -41,8 +41,12 @@
                     <items>
                         <label alignment="center" text="iOSDevUK 2015 Hack" textAlignment="center" numberOfLines="0" id="Tz9-b0-uVS"/>
                         <label alignment="left" text="Created By:" id="hFw-0I-9bh"/>
-                        <label alignment="left" text="Ben Callis" id="QaO-7p-bQU"/>
-                        <label alignment="left" text="Gwendolyn Weston" id="Tn3-3G-w0r"/>
+                        <label alignment="left" text="Ben Callis" id="QaO-7p-bQU">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <label alignment="left" text="Gwendolyn Weston" id="Tn3-3G-w0r">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
                     </items>
                 </controller>
             </objects>
@@ -76,7 +80,7 @@
                     <items>
                         <group width="60" alignment="center" id="WqZ-4J-sWV">
                             <items>
-                                <label alignment="left" verticalAlignment="center" text="Score:" id="Tpj-Ch-Of8">
+                                <label alignment="left" verticalAlignment="center" text="Score:" minimumScaleFactor="0.5" id="Tpj-Ch-Of8">
                                     <color key="textColor" red="0.8291114267676768" green="0.8291114267676768" blue="0.8291114267676768" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
@@ -108,6 +112,7 @@
                     <connections>
                         <outlet property="choicesTable" destination="bbQ-uU-2wg" id="wUA-fn-xIh"/>
                         <outlet property="currentScoreLabel" destination="1KL-9y-q8F" id="64X-rG-JSg"/>
+                        <outlet property="currentScoreTitleLabel" destination="Tpj-Ch-Of8" id="n3v-0c-b9y"/>
                     </connections>
                 </controller>
             </objects>
