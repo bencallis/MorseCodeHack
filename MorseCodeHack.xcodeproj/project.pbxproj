@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		247427871BA1F6D20058BBA9 /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247427861BA1F6D20058BBA9 /* GameEngine.swift */; settings = {ASSET_TAGS = (); }; };
+		32965D961BA21F4A00B2E99D /* LearnInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32965D951BA21F4A00B2E99D /* LearnInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
+		32965D981BA21F6B00B2E99D /* LearnRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32965D971BA21F6B00B2E99D /* LearnRow.swift */; settings = {ASSET_TAGS = (); }; };
 		32A278081BA1EB9200A04934 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A278071BA1EB9200A04934 /* AppDelegate.swift */; };
 		32A2780A1BA1EB9200A04934 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A278091BA1EB9200A04934 /* ViewController.swift */; };
 		32A2780D1BA1EB9200A04934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A2780B1BA1EB9200A04934 /* Main.storyboard */; };
@@ -85,6 +87,8 @@
 
 /* Begin PBXFileReference section */
 		247427861BA1F6D20058BBA9 /* GameEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		32965D951BA21F4A00B2E99D /* LearnInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnInterfaceController.swift; sourceTree = "<group>"; };
+		32965D971BA21F6B00B2E99D /* LearnRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnRow.swift; sourceTree = "<group>"; };
 		32A278041BA1EB9200A04934 /* MorseCodeHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseCodeHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A278071BA1EB9200A04934 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32A278091BA1EB9200A04934 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 				32A278441BA1EB9300A04934 /* Assets.xcassets */,
 				32A278461BA1EB9300A04934 /* Info.plist */,
 				32A278631BA1FA4100A04934 /* SimpleRow.swift */,
+				32965D951BA21F4A00B2E99D /* LearnInterfaceController.swift */,
+				32965D971BA21F6B00B2E99D /* LearnRow.swift */,
 			);
 			path = "MorseCodeHack WatchKit Extension";
 			sourceTree = "<group>";
@@ -456,6 +462,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32965D961BA21F4A00B2E99D /* LearnInterfaceController.swift in Sources */,
+				32965D981BA21F6B00B2E99D /* LearnRow.swift in Sources */,
 				32A278431BA1EB9300A04934 /* ExtensionDelegate.swift in Sources */,
 				32A2785F1BA1F3BD00A04934 /* HomeInterfaceController.swift in Sources */,
 				32A278611BA1F6D100A04934 /* GameInterfaceController.swift in Sources */,

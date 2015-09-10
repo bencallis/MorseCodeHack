@@ -52,23 +52,34 @@
             </objects>
             <point key="canvasLocation" x="195" y="670"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Learn Interface Controller-->
         <scene sceneID="gpq-CH-080">
             <objects>
-                <controller hidesWhenLoading="NO" id="s57-2V-JaV">
+                <controller hidesWhenLoading="NO" id="s57-2V-JaV" customClass="LearnInterfaceController" customModule="MorseCodeHack_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="Zh3-CV-bs5">
                             <items>
-                                <tableRow id="cWO-6o-bKi">
-                                    <group key="rootItem" width="1" alignment="left" id="FD0-u5-wca">
+                                <tableRow identifier="learnRow" id="XLL-6e-Wqn" customClass="LearnRow" customModule="MorseCodeHack_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="43" alignment="left" layout="vertical" id="rid-SU-MwV">
                                         <items>
-                                            <label alignment="left" verticalAlignment="center" text="A" id="Kuu-Cq-Ja7"/>
+                                            <label alignment="center" verticalAlignment="center" text="0" id="CVt-nT-hAg">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <label alignment="center" verticalAlignment="bottom" text="-----" id="sEf-B4-WSt"/>
                                         </items>
+                                        <color key="backgroundColor" red="0.63137254899999995" green="0.3411764706" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </group>
+                                    <connections>
+                                        <outlet property="morseCodeLabel" destination="sEf-B4-WSt" id="yKY-b7-5gW"/>
+                                        <outlet property="titleLabel" destination="CVt-nT-hAg" id="w13-tZ-YRS"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="learnTable" destination="Zh3-CV-bs5" id="oij-hG-RIk"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="504" y="562"/>
@@ -84,7 +95,7 @@
                                     <color key="textColor" red="0.8291114267676768" green="0.8291114267676768" blue="0.8291114267676768" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
-                                <label alignment="left" verticalAlignment="center" text="5" id="1KL-9y-q8F">
+                                <label alignment="left" verticalAlignment="center" text="0" id="1KL-9y-q8F">
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
@@ -95,7 +106,7 @@
                                 <tableRow identifier="choiceRow" id="CY7-HD-VT9" customClass="SimpleRow" customModule="MorseCodeHack_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="4IQ-qx-HfV">
                                         <items>
-                                            <label alignment="center" verticalAlignment="center" text="Choice 1" id="py0-yO-Mm1">
+                                            <label alignment="center" verticalAlignment="center" id="py0-yO-Mm1">
                                                 <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                             </label>
                                         </items>
