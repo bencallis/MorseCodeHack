@@ -80,3 +80,15 @@ func getCode(letter: String) -> [MorseCharacter]?{
   return alphaNumToMorse[letter]
 }
 
+func getCodeString(letter: String) -> String? {
+  var codeString = ""
+  
+  if let code = getCode(letter) {
+    for character in code {
+      codeString += character.rawValue
+    }
+  }
+  
+  return codeString
+}
+
