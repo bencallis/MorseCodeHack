@@ -77,6 +77,7 @@ class GameInterfaceController: WKInterfaceController {
     
     func handleWrongAnswer () {
         // throw back to main menu
+        self.popToRootController()
     }
 
 }
