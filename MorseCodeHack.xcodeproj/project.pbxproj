@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		327F5A111BA1E70E0069B11B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 327F5A101BA1E70E0069B11B /* main.m */; };
+		327F5A141BA1E70E0069B11B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 327F5A131BA1E70E0069B11B /* AppDelegate.m */; };
+		327F5A171BA1E70E0069B11B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327F5A161BA1E70E0069B11B /* ViewController.m */; };
+		327F5A1A1BA1E70E0069B11B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327F5A181BA1E70E0069B11B /* Main.storyboard */; };
+		327F5A1C1BA1E70E0069B11B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327F5A1B1BA1E70E0069B11B /* Assets.xcassets */; };
+		327F5A1F1BA1E70E0069B11B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327F5A1D1BA1E70E0069B11B /* LaunchScreen.storyboard */; };
+		327F5A2A1BA1E70E0069B11B /* MorseCodeHackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 327F5A291BA1E70E0069B11B /* MorseCodeHackTests.m */; };
+		327F5A351BA1E70E0069B11B /* MorseCodeHackUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 327F5A341BA1E70E0069B11B /* MorseCodeHackUITests.m */; };
+		327F5A3A1BA1E70E0069B11B /* MorseCodeHack WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 327F5A391BA1E70E0069B11B /* MorseCodeHack WatchKit App.app */; };
+		327F5A401BA1E70E0069B11B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327F5A3E1BA1E70E0069B11B /* Interface.storyboard */; };
+		327F5A421BA1E70E0069B11B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327F5A411BA1E70E0069B11B /* Assets.xcassets */; };
+		327F5A491BA1E70E0069B11B /* MorseCodeHack WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 327F5A481BA1E70E0069B11B /* MorseCodeHack WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		327F5A4F1BA1E70E0069B11B /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327F5A4E1BA1E70E0069B11B /* InterfaceController.m */; };
+		327F5A521BA1E70E0069B11B /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 327F5A511BA1E70E0069B11B /* ExtensionDelegate.m */; };
+		327F5A541BA1E70E0069B11B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 327F5A531BA1E70E0069B11B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		327F5A261BA1E70E0069B11B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327F5A041BA1E70E0069B11B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327F5A0B1BA1E70E0069B11B;
+			remoteInfo = MorseCodeHack;
+		};
+		327F5A311BA1E70E0069B11B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327F5A041BA1E70E0069B11B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327F5A0B1BA1E70E0069B11B;
+			remoteInfo = MorseCodeHack;
+		};
+		327F5A3B1BA1E70E0069B11B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327F5A041BA1E70E0069B11B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327F5A381BA1E70E0069B11B;
+			remoteInfo = "MorseCodeHack WatchKit App";
+		};
+		327F5A4A1BA1E70E0069B11B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 327F5A041BA1E70E0069B11B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 327F5A471BA1E70E0069B11B;
+			remoteInfo = "MorseCodeHack WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		327F5A5B1BA1E70E0069B11B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				327F5A491BA1E70E0069B11B /* MorseCodeHack WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327F5A5F1BA1E70E0069B11B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				327F5A3A1BA1E70E0069B11B /* MorseCodeHack WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		327F5A0C1BA1E70E0069B11B /* MorseCodeHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorseCodeHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		327F5A101BA1E70E0069B11B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		327F5A121BA1E70E0069B11B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		327F5A131BA1E70E0069B11B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		327F5A151BA1E70E0069B11B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		327F5A161BA1E70E0069B11B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		327F5A191BA1E70E0069B11B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		327F5A1B1BA1E70E0069B11B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		327F5A1E1BA1E70E0069B11B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		327F5A201BA1E70E0069B11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327F5A251BA1E70E0069B11B /* MorseCodeHackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorseCodeHackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		327F5A291BA1E70E0069B11B /* MorseCodeHackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MorseCodeHackTests.m; sourceTree = "<group>"; };
+		327F5A2B1BA1E70E0069B11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327F5A301BA1E70E0069B11B /* MorseCodeHackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorseCodeHackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		327F5A341BA1E70E0069B11B /* MorseCodeHackUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MorseCodeHackUITests.m; sourceTree = "<group>"; };
+		327F5A361BA1E70E0069B11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327F5A391BA1E70E0069B11B /* MorseCodeHack WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MorseCodeHack WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		327F5A3F1BA1E70E0069B11B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		327F5A411BA1E70E0069B11B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		327F5A431BA1E70E0069B11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327F5A481BA1E70E0069B11B /* MorseCodeHack WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MorseCodeHack WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		327F5A4D1BA1E70E0069B11B /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		327F5A4E1BA1E70E0069B11B /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		327F5A501BA1E70E0069B11B /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		327F5A511BA1E70E0069B11B /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		327F5A531BA1E70E0069B11B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		327F5A551BA1E70E0069B11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		327F5A091BA1E70E0069B11B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327F5A221BA1E70E0069B11B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327F5A2D1BA1E70E0069B11B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327F5A451BA1E70E0069B11B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		327F5A031BA1E70E0069B11B = {
+			isa = PBXGroup;
+			children = (
+				327F5A0E1BA1E70E0069B11B /* MorseCodeHack */,
+				327F5A281BA1E70E0069B11B /* MorseCodeHackTests */,
+				327F5A331BA1E70E0069B11B /* MorseCodeHackUITests */,
+				327F5A3D1BA1E70E0069B11B /* MorseCodeHack WatchKit App */,
+				327F5A4C1BA1E70E0069B11B /* MorseCodeHack WatchKit Extension */,
+				327F5A0D1BA1E70E0069B11B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		327F5A0D1BA1E70E0069B11B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				327F5A0C1BA1E70E0069B11B /* MorseCodeHack.app */,
+				327F5A251BA1E70E0069B11B /* MorseCodeHackTests.xctest */,
+				327F5A301BA1E70E0069B11B /* MorseCodeHackUITests.xctest */,
+				327F5A391BA1E70E0069B11B /* MorseCodeHack WatchKit App.app */,
+				327F5A481BA1E70E0069B11B /* MorseCodeHack WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		327F5A0E1BA1E70E0069B11B /* MorseCodeHack */ = {
+			isa = PBXGroup;
+			children = (
+				327F5A121BA1E70E0069B11B /* AppDelegate.h */,
+				327F5A131BA1E70E0069B11B /* AppDelegate.m */,
+				327F5A151BA1E70E0069B11B /* ViewController.h */,
+				327F5A161BA1E70E0069B11B /* ViewController.m */,
+				327F5A181BA1E70E0069B11B /* Main.storyboard */,
+				327F5A1B1BA1E70E0069B11B /* Assets.xcassets */,
+				327F5A1D1BA1E70E0069B11B /* LaunchScreen.storyboard */,
+				327F5A201BA1E70E0069B11B /* Info.plist */,
+				327F5A0F1BA1E70E0069B11B /* Supporting Files */,
+			);
+			path = MorseCodeHack;
+			sourceTree = "<group>";
+		};
+		327F5A0F1BA1E70E0069B11B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				327F5A101BA1E70E0069B11B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		327F5A281BA1E70E0069B11B /* MorseCodeHackTests */ = {
+			isa = PBXGroup;
+			children = (
+				327F5A291BA1E70E0069B11B /* MorseCodeHackTests.m */,
+				327F5A2B1BA1E70E0069B11B /* Info.plist */,
+			);
+			path = MorseCodeHackTests;
+			sourceTree = "<group>";
+		};
+		327F5A331BA1E70E0069B11B /* MorseCodeHackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				327F5A341BA1E70E0069B11B /* MorseCodeHackUITests.m */,
+				327F5A361BA1E70E0069B11B /* Info.plist */,
+			);
+			path = MorseCodeHackUITests;
+			sourceTree = "<group>";
+		};
+		327F5A3D1BA1E70E0069B11B /* MorseCodeHack WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				327F5A3E1BA1E70E0069B11B /* Interface.storyboard */,
+				327F5A411BA1E70E0069B11B /* Assets.xcassets */,
+				327F5A431BA1E70E0069B11B /* Info.plist */,
+			);
+			path = "MorseCodeHack WatchKit App";
+			sourceTree = "<group>";
+		};
+		327F5A4C1BA1E70E0069B11B /* MorseCodeHack WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				327F5A4D1BA1E70E0069B11B /* InterfaceController.h */,
+				327F5A4E1BA1E70E0069B11B /* InterfaceController.m */,
+				327F5A501BA1E70E0069B11B /* ExtensionDelegate.h */,
+				327F5A511BA1E70E0069B11B /* ExtensionDelegate.m */,
+				327F5A531BA1E70E0069B11B /* Assets.xcassets */,
+				327F5A551BA1E70E0069B11B /* Info.plist */,
+			);
+			path = "MorseCodeHack WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		327F5A0B1BA1E70E0069B11B /* MorseCodeHack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327F5A601BA1E70E0069B11B /* Build configuration list for PBXNativeTarget "MorseCodeHack" */;
+			buildPhases = (
+				327F5A081BA1E70E0069B11B /* Sources */,
+				327F5A091BA1E70E0069B11B /* Frameworks */,
+				327F5A0A1BA1E70E0069B11B /* Resources */,
+				327F5A5F1BA1E70E0069B11B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327F5A3C1BA1E70E0069B11B /* PBXTargetDependency */,
+			);
+			name = MorseCodeHack;
+			productName = MorseCodeHack;
+			productReference = 327F5A0C1BA1E70E0069B11B /* MorseCodeHack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		327F5A241BA1E70E0069B11B /* MorseCodeHackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327F5A631BA1E70E0069B11B /* Build configuration list for PBXNativeTarget "MorseCodeHackTests" */;
+			buildPhases = (
+				327F5A211BA1E70E0069B11B /* Sources */,
+				327F5A221BA1E70E0069B11B /* Frameworks */,
+				327F5A231BA1E70E0069B11B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327F5A271BA1E70E0069B11B /* PBXTargetDependency */,
+			);
+			name = MorseCodeHackTests;
+			productName = MorseCodeHackTests;
+			productReference = 327F5A251BA1E70E0069B11B /* MorseCodeHackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		327F5A2F1BA1E70E0069B11B /* MorseCodeHackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327F5A661BA1E70E0069B11B /* Build configuration list for PBXNativeTarget "MorseCodeHackUITests" */;
+			buildPhases = (
+				327F5A2C1BA1E70E0069B11B /* Sources */,
+				327F5A2D1BA1E70E0069B11B /* Frameworks */,
+				327F5A2E1BA1E70E0069B11B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327F5A321BA1E70E0069B11B /* PBXTargetDependency */,
+			);
+			name = MorseCodeHackUITests;
+			productName = MorseCodeHackUITests;
+			productReference = 327F5A301BA1E70E0069B11B /* MorseCodeHackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		327F5A381BA1E70E0069B11B /* MorseCodeHack WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327F5A5C1BA1E70E0069B11B /* Build configuration list for PBXNativeTarget "MorseCodeHack WatchKit App" */;
+			buildPhases = (
+				327F5A371BA1E70E0069B11B /* Resources */,
+				327F5A5B1BA1E70E0069B11B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				327F5A4B1BA1E70E0069B11B /* PBXTargetDependency */,
+			);
+			name = "MorseCodeHack WatchKit App";
+			productName = "MorseCodeHack WatchKit App";
+			productReference = 327F5A391BA1E70E0069B11B /* MorseCodeHack WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		327F5A471BA1E70E0069B11B /* MorseCodeHack WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 327F5A581BA1E70E0069B11B /* Build configuration list for PBXNativeTarget "MorseCodeHack WatchKit Extension" */;
+			buildPhases = (
+				327F5A441BA1E70E0069B11B /* Sources */,
+				327F5A451BA1E70E0069B11B /* Frameworks */,
+				327F5A461BA1E70E0069B11B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MorseCodeHack WatchKit Extension";
+			productName = "MorseCodeHack WatchKit Extension";
+			productReference = 327F5A481BA1E70E0069B11B /* MorseCodeHack WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		327F5A041BA1E70E0069B11B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = iOSDevUK;
+				TargetAttributes = {
+					327F5A0B1BA1E70E0069B11B = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					327F5A241BA1E70E0069B11B = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 327F5A0B1BA1E70E0069B11B;
+					};
+					327F5A2F1BA1E70E0069B11B = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 327F5A0B1BA1E70E0069B11B;
+					};
+					327F5A381BA1E70E0069B11B = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					327F5A471BA1E70E0069B11B = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 327F5A071BA1E70E0069B11B /* Build configuration list for PBXProject "MorseCodeHack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 327F5A031BA1E70E0069B11B;
+			productRefGroup = 327F5A0D1BA1E70E0069B11B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				327F5A0B1BA1E70E0069B11B /* MorseCodeHack */,
+				327F5A241BA1E70E0069B11B /* MorseCodeHackTests */,
+				327F5A2F1BA1E70E0069B11B /* MorseCodeHackUITests */,
+				327F5A381BA1E70E0069B11B /* MorseCodeHack WatchKit App */,
+				327F5A471BA1E70E0069B11B /* MorseCodeHack WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		327F5A0A1BA1E70E0069B11B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327F5A1F1BA1E70E0069B11B /* LaunchScreen.storyboard in Resources */,
+				327F5A1C1BA1E70E0069B11B /* Assets.xcassets in Resources */,
+				327F5A1A1BA1E70E0069B11B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327F5A231BA1E70E0069B11B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327F5A2E1BA1E70E0069B11B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327F5A371BA1E70E0069B11B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327F5A421BA1E70E0069B11B /* Assets.xcassets in Resources */,
+				327F5A401BA1E70E0069B11B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327F5A461BA1E70E0069B11B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327F5A541BA1E70E0069B11B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		327F5A081BA1E70E0069B11B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327F5A171BA1E70E0069B11B /* ViewController.m in Sources */,
+				327F5A141BA1E70E0069B11B /* AppDelegate.m in Sources */,
+				327F5A111BA1E70E0069B11B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327F5A211BA1E70E0069B11B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327F5A2A1BA1E70E0069B11B /* MorseCodeHackTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327F5A2C1BA1E70E0069B11B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327F5A351BA1E70E0069B11B /* MorseCodeHackUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		327F5A441BA1E70E0069B11B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327F5A521BA1E70E0069B11B /* ExtensionDelegate.m in Sources */,
+				327F5A4F1BA1E70E0069B11B /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		327F5A271BA1E70E0069B11B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327F5A0B1BA1E70E0069B11B /* MorseCodeHack */;
+			targetProxy = 327F5A261BA1E70E0069B11B /* PBXContainerItemProxy */;
+		};
+		327F5A321BA1E70E0069B11B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327F5A0B1BA1E70E0069B11B /* MorseCodeHack */;
+			targetProxy = 327F5A311BA1E70E0069B11B /* PBXContainerItemProxy */;
+		};
+		327F5A3C1BA1E70E0069B11B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327F5A381BA1E70E0069B11B /* MorseCodeHack WatchKit App */;
+			targetProxy = 327F5A3B1BA1E70E0069B11B /* PBXContainerItemProxy */;
+		};
+		327F5A4B1BA1E70E0069B11B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 327F5A471BA1E70E0069B11B /* MorseCodeHack WatchKit Extension */;
+			targetProxy = 327F5A4A1BA1E70E0069B11B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		327F5A181BA1E70E0069B11B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327F5A191BA1E70E0069B11B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		327F5A1D1BA1E70E0069B11B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327F5A1E1BA1E70E0069B11B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		327F5A3E1BA1E70E0069B11B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				327F5A3F1BA1E70E0069B11B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		327F5A561BA1E70E0069B11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		327F5A571BA1E70E0069B11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		327F5A591BA1E70E0069B11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MorseCodeHack WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MCH.MorseCodeHack.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		327F5A5A1BA1E70E0069B11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MorseCodeHack WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MCH.MorseCodeHack.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		327F5A5D1BA1E70E0069B11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = MorseCodeHack_WatchKit_Extension;
+				INFOPLIST_FILE = "MorseCodeHack WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = MCH.MorseCodeHack.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		327F5A5E1BA1E70E0069B11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = MorseCodeHack_WatchKit_Extension;
+				INFOPLIST_FILE = "MorseCodeHack WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = MCH.MorseCodeHack.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		327F5A611BA1E70E0069B11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MorseCodeHack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MCH.MorseCodeHack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		327F5A621BA1E70E0069B11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MorseCodeHack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MCH.MorseCodeHack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		327F5A641BA1E70E0069B11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MorseCodeHackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MCH.MorseCodeHackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MorseCodeHack.app/MorseCodeHack";
+			};
+			name = Debug;
+		};
+		327F5A651BA1E70E0069B11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MorseCodeHackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MCH.MorseCodeHackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MorseCodeHack.app/MorseCodeHack";
+			};
+			name = Release;
+		};
+		327F5A671BA1E70E0069B11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MorseCodeHackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MCH.MorseCodeHackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MorseCodeHack;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		327F5A681BA1E70E0069B11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MorseCodeHackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MCH.MorseCodeHackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MorseCodeHack;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		327F5A071BA1E70E0069B11B /* Build configuration list for PBXProject "MorseCodeHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327F5A561BA1E70E0069B11B /* Debug */,
+				327F5A571BA1E70E0069B11B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		327F5A581BA1E70E0069B11B /* Build configuration list for PBXNativeTarget "MorseCodeHack WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327F5A591BA1E70E0069B11B /* Debug */,
+				327F5A5A1BA1E70E0069B11B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		327F5A5C1BA1E70E0069B11B /* Build configuration list for PBXNativeTarget "MorseCodeHack WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327F5A5D1BA1E70E0069B11B /* Debug */,
+				327F5A5E1BA1E70E0069B11B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		327F5A601BA1E70E0069B11B /* Build configuration list for PBXNativeTarget "MorseCodeHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327F5A611BA1E70E0069B11B /* Debug */,
+				327F5A621BA1E70E0069B11B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		327F5A631BA1E70E0069B11B /* Build configuration list for PBXNativeTarget "MorseCodeHackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327F5A641BA1E70E0069B11B /* Debug */,
+				327F5A651BA1E70E0069B11B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		327F5A661BA1E70E0069B11B /* Build configuration list for PBXNativeTarget "MorseCodeHackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327F5A671BA1E70E0069B11B /* Debug */,
+				327F5A681BA1E70E0069B11B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 327F5A041BA1E70E0069B11B /* Project object */;
+}
