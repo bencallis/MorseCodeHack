@@ -47,7 +47,8 @@ let alphaNumToMorse = [
   "0": [MorseCharacter.Dash,MorseCharacter.Dash,MorseCharacter.Dash,MorseCharacter.Dash,MorseCharacter.Dash],
 ]
 
-enum MorseCharacter : String {
+
+public enum MorseCharacter : String {
   case Dot = "."
   case Dash = "-"
   case Space = " "
@@ -74,5 +75,9 @@ func getNextRound() -> Round {
   let designatedLetter = letters[0]
   let thisRound = Round(letter: designatedLetter, morseCode: alphaNumToMorse[designatedLetter]!, alternatives:Array(letters[1..<letters.count]))
   return thisRound
+}
+
+func getCode(letter: String) -> [MorseCharacter]?{
+  return alphaNumToMorse[letter]
 }
 

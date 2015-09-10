@@ -57,8 +57,12 @@ class GameInterfaceController: WKInterfaceController {
                 row.titleText = text
             }
         }
+
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { () -> Void in
+          MorseTapInterfaceController.processCode(newRound.morseCode)
+        }
     }
-    
+
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
         if let row = table.rowControllerAtIndex(rowIndex) as? SimpleRow {
             let isCorrect = row.titleText == currentRound.letter

@@ -27,6 +27,7 @@
 		32A278611BA1F6D100A04934 /* GameInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A278601BA1F6D100A04934 /* GameInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
 		32A278621BA1F8FA00A04934 /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247427861BA1F6D20058BBA9 /* GameEngine.swift */; settings = {ASSET_TAGS = (); }; };
 		32A278641BA1FA4100A04934 /* SimpleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A278631BA1FA4100A04934 /* SimpleRow.swift */; settings = {ASSET_TAGS = (); }; };
+		DA267D6D1BA214E4006A25E3 /* MorseTapInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA267D6C1BA214E4006A25E3 /* MorseTapInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		32A2785D1BA1F17B00A04934 /* HomeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeInterfaceController.swift; path = "../MorseCodeHack WatchKit App/HomeInterfaceController.swift"; sourceTree = "<group>"; };
 		32A278601BA1F6D100A04934 /* GameInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInterfaceController.swift; sourceTree = "<group>"; };
 		32A278631BA1FA4100A04934 /* SimpleRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleRow.swift; sourceTree = "<group>"; };
+		DA267D6C1BA214E4006A25E3 /* MorseTapInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorseTapInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 			children = (
 				32A278421BA1EB9300A04934 /* ExtensionDelegate.swift */,
 				32A2785D1BA1F17B00A04934 /* HomeInterfaceController.swift */,
+				DA267D6C1BA214E4006A25E3 /* MorseTapInterfaceController.swift */,
 				32A278601BA1F6D100A04934 /* GameInterfaceController.swift */,
 				32A278441BA1EB9300A04934 /* Assets.xcassets */,
 				32A278461BA1EB9300A04934 /* Info.plist */,
@@ -462,8 +465,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32965D961BA21F4A00B2E99D /* LearnInterfaceController.swift in Sources */,
+ 				32965D961BA21F4A00B2E99D /* LearnInterfaceController.swift in Sources */,
 				32965D981BA21F6B00B2E99D /* LearnRow.swift in Sources */,
+				DA267D6D1BA214E4006A25E3 /* MorseTapInterfaceController.swift in Sources */,
 				32A278431BA1EB9300A04934 /* ExtensionDelegate.swift in Sources */,
 				32A2785F1BA1F3BD00A04934 /* HomeInterfaceController.swift in Sources */,
 				32A278611BA1F6D100A04934 /* GameInterfaceController.swift in Sources */,
