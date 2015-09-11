@@ -36,7 +36,7 @@ class LearnInterfaceController: WKInterfaceController {
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
         let sortedKeysAndValues = alphaNumToMorse.sort { $0.0 < $1.0 }
         let (_, code) = sortedKeysAndValues[rowIndex]
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { () -> Void in
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
             MorseTapInterfaceController.processCode(code)
         }
     }

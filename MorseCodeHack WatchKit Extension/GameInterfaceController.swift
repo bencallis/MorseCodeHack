@@ -25,10 +25,7 @@ class GameInterfaceController: WKInterfaceController {
     var buttonsArray: [WKInterfaceButton]!
     var correctButton: WKInterfaceButton!
     var currentRound : Round!
-
-//    @IBOutlet var choicesTable: WKInterfaceTable!
-  
-    
+      
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
       buttonsArray = [topLeft, topright, bottomLeft, bottomRight]
@@ -41,8 +38,7 @@ class GameInterfaceController: WKInterfaceController {
         currentRound = newRound
         
         let numberOfOptions = newRound.alternatives.count + 1
-//        choicesTable.setNumberOfRows(numberOfOptions, withRowType: "choiceRow")
-
+        
         var arrayOfChoices = newRound.alternatives + [newRound.letter]
         for index in 0..<arrayOfChoices.count {
             let swapIndex = Int(arc4random_uniform(UInt32(numberOfOptions)))
@@ -57,15 +53,6 @@ class GameInterfaceController: WKInterfaceController {
         buttonsArray[index].setTitle(arrayOfChoices[index])
         buttonsArray[index].setBackgroundColor(UIColor(red: 178/255, green: 115/255, blue: 237/255, alpha: 1))
       }
-      //178, 115, 237, 1)
-      
-//        for index in 0..<4 {
-//            if let row = choicesTable.rowControllerAtIndex(index) as? SimpleRow {
-//                let text = arrayOfChoices[index]
-//                row.titleLabel.setText(text)
-//                row.titleText = text
-//            }
-//        }
 
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
           MorseTapInterfaceController.processCode(newRound.morseCode)
@@ -88,7 +75,6 @@ class GameInterfaceController: WKInterfaceController {
     buttonTapped(bottomRight)
   }
   
-  
   func buttonTapped(sender: WKInterfaceButton) {
     correctButton.setBackgroundColor(UIColor.greenColor())
     if (sender == correctButton) {
@@ -101,37 +87,13 @@ class GameInterfaceController: WKInterfaceController {
       handleWrongAnswer()
     }
   }
-
-  
-//    override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
-//        if let row = table.rowControllerAtIndex(rowIndex) as? SimpleRow {
-//            let isCorrect = row.titleText == currentRound.letter
-//            let colour = isCorrect ? UIColor.greenColor() : UIColor.redColor()
-//            row.group.setBackgroundColor(colour)
-//            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.25 * Double(NSEC_PER_SEC)))
-//            dispatch_after(delayTime, dispatch_get_main_queue(), {
-//                if isCorrect {
-//                    self.handleCorrectAnswer()
-//                } else {
-//                    self.handleWrongAnswer()
-//                }
-//            })
-//        }
-//    }
   
     func handleCorrectAnswer () {
         score++
         reloadRound()
     }
     
-    func handleWrongAnswer () {
-//        for index in 0..<4 {
-//            if let row = choicesTable.rowControllerAtIndex(index) as? SimpleRow {
-//                let isCorrect = row.titleText == currentRound.letter
-//                let colour = isCorrect ? UIColor.greenColor() : UIColor.redColor()
-//                row.group.setBackgroundColor(colour)
-//            }
-//        }
+    func handleWrongAnswer ()  {
         let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC)))
         dispatch_after(delayTime, dispatch_get_main_queue(), {
             self.popToRootController()
